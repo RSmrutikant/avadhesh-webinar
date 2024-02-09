@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Fragment } from "react";
+import { Banner } from "./components/Banner";
+import { Agenda } from "./components/Agenda";
+import { Speaker } from "./components/Speaker";
+import { Footer } from "./components/Footer";
+import { RegForm } from "./components/RegForm";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Fragment>
+        <Banner />
+        <Agenda />
+        <Speaker />
+        <RegForm/>
+        <Footer/>
+      </Fragment>
     </div>
   );
 }

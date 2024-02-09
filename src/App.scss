@@ -1,0 +1,325 @@
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$theme-col1: #aa367c;
+$theme-col2: #4a2fbd;
+$section-heading-lg: 48px;
+$section-heading-md: 28px;
+$section-heading2-md: 26px;
+$section-content-md: 22px;
+$section-content-sm: 18px;
+$spacing-32: 32px;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background-color: #000000;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.44, rgb(0, 0, 0)),
+    color-stop(0.55, rgba(0, 0, 0, 0)),
+    color-stop(0.86, rgb(255, 238, 0))
+  );
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-gutter: auto;
+  position: relative;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-family: "Centra", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+// Component CSS ============================================
+
+.section-1.banner {
+  margin-bottom: $spacing-32;
+  position: relative;
+
+  .section-1-left {
+    padding: 40px;
+
+    .brand-logo {
+      width: 90px;
+    }
+
+    .section-heading {
+      font-size: $section-heading-lg;
+    }
+
+    .section-context {
+      margin-top: 80px;
+      font-family: sans-serif;
+      letter-spacing: 2px;
+      font-size: $section-content-sm;
+      text-transform: uppercase;
+    }
+
+    .line {
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(90deg, #6dcef2 20%, #fff20000 100%);
+      margin: 20px 0;
+    }
+
+    .section-detail {
+      width: 90%;
+      font-size: $section-content-sm;
+      line-height: 1.5rem;
+    }
+
+    .agenda {
+      font-weight: bold;
+      font-size: $section-content-md;
+      margin: 0;
+
+      p {
+        margin: 5px 0;
+      }
+    }
+
+    .logo-addon {
+      display: flex;
+      font-size: 20px;
+      text-transform: uppercase;
+      justify-content: center;
+      align-items: center;
+      border-left: 2px solid #000;
+      padding-left: 10px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+  }
+
+  // .section-1-right:after {
+  //   background-image: url("https://img.freepik.com/free-vector/flowing-badge-app_74855-3835.jpg?w=826&t=st=1707413082~exp=1707413682~hmac=ee449406245088c6286631333b4430a8e5f3ec3cf95919448af8d0fa68635c10");
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
+}
+
+.section-2.agenda {
+  font-size: $section-content-md;
+  padding-block: $spacing-32;
+}
+
+.section-3.speaker {
+  padding-block: $spacing-32;
+
+  .speaker-wrapper {
+    padding-bottom: $spacing-32;
+    position: relative;
+
+    .speaker-about {
+      font-size: $section-content-md;
+    }
+
+    .section-image {
+      &:before {
+        content:"";
+        width:30%;
+        height: 85%;
+        position: absolute;
+        background-color: #ffd100;
+        right: -20px;
+        top: -30px;
+        z-index: -1;
+      }
+    }
+  }
+
+  .speaker-banner-long {
+    background-color: #ffd100;
+    padding: 80px;
+
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .button-wrapper{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .section-button {
+        padding: 15px 40px;
+      }
+      .section-button:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.registration-form {
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 5px;
+
+  .reg-form-image {
+    img {
+      width: 350px;
+      aspect-ratio: auto 3/4;
+    }
+  }
+
+}
+
+.section-5.footer {
+  .footer-content{
+    padding: 20px;
+  .brand-logo {
+    width: 100px;
+  }
+}
+}
+
+.line {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(90deg, #6dcef2 20%, #fff20000 100%);
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .section-1.banner {
+    .section-1-left {
+      padding: 30px;
+
+      .brand-logo {
+        width: 70px;
+      }
+
+      .section-heading {
+        font-size: $section-heading-md;
+      }
+
+      .section-context {
+        margin-top: 50px;
+      }
+
+      .section-detail {
+        width: 100%;
+      }
+
+      .agenda {
+        font-size: $section-content-sm;
+      }
+    }
+  }
+
+  .section-2.agenda {
+    margin-block: 24px;
+
+    .agenda-details {
+      padding: 0 10px;
+      font-size: $section-content-sm;
+
+      .section-heading {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .section-3.speaker {
+    .speaker-container {
+      padding: 0 22px;
+    }
+    .section-heading {
+      font-size: 26px;
+    }
+
+    .speaker-wrapper {
+      .speaker-about {
+        font-size: $section-content-sm;
+        padding-bottom: 20px;
+      }
+
+      .section-image {
+        &:before {
+          content:"";
+          display: none;
+        }
+      }
+    }
+    .speaker-banner-long {
+      padding: 30px 20px;
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .section-button {
+        padding: 10px 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .section-5.footer {
+    .footer-content{
+      padding: 10px;
+    .brand-logo {
+      width: 80px;
+    }
+  }
+  }
+}
