@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/avadhesh-webinar/static/css/main.e3802bee.css",
-    "main.js": "/avadhesh-webinar/static/js/main.f9eba84d.js",
+    "main.css": "/avadhesh-webinar/static/css/main.683bcd17.css",
+    "main.js": "/avadhesh-webinar/static/js/main.744be5f9.js",
     "static/js/592.01b24d29.chunk.js": "/avadhesh-webinar/static/js/592.01b24d29.chunk.js",
     "static/media/section-1-banner.webp": "/avadhesh-webinar/static/media/section-1-banner.c172b1db103425e27a25.webp",
     "static/media/reg-section-image.jpg": "/avadhesh-webinar/static/media/reg-section-image.911451307116229e5e46.jpg",
@@ -9,12 +9,12 @@
     "static/media/section-1-banner-ph.webp": "/avadhesh-webinar/static/media/section-1-banner-ph.568fdf952c5931eda61f.webp",
     "static/media/speaker-image.webp": "/avadhesh-webinar/static/media/speaker-image.edef9a71a19ea97e1508.webp",
     "index.html": "/avadhesh-webinar/index.html",
-    "main.e3802bee.css.map": "/avadhesh-webinar/static/css/main.e3802bee.css.map",
-    "main.f9eba84d.js.map": "/avadhesh-webinar/static/js/main.f9eba84d.js.map",
+    "main.683bcd17.css.map": "/avadhesh-webinar/static/css/main.683bcd17.css.map",
+    "main.744be5f9.js.map": "/avadhesh-webinar/static/js/main.744be5f9.js.map",
     "592.01b24d29.chunk.js.map": "/avadhesh-webinar/static/js/592.01b24d29.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3802bee.css",
-    "static/js/main.f9eba84d.js"
+    "static/css/main.683bcd17.css",
+    "static/js/main.744be5f9.js"
   ]
 }
