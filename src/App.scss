@@ -146,13 +146,6 @@ img {
       letter-spacing: 1px;
     }
   }
-
-  // .section-1-right:after {
-  //   background-image: url("https://img.freepik.com/free-vector/flowing-badge-app_74855-3835.jpg?w=826&t=st=1707413082~exp=1707413682~hmac=ee449406245088c6286631333b4430a8e5f3ec3cf95919448af8d0fa68635c10");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  // }
 }
 
 .section-2.agenda {
@@ -232,13 +225,56 @@ img {
 }
 }
 
+#countdown {
+  align-items: center;
+  display: flex;
+  width: fit-content;
+  margin-bottom: 30px;
+  font-family: -apple-system, 
+  BlinkMacSystemFont, 
+  "Segoe UI", 
+  Roboto, 
+  Oxygen-Sans, 
+  Ubuntu, 
+  Cantarell, 
+  "Helvetica Neue", 
+  sans-serif;
+
+  div {
+    display: inline-block;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  div span {
+    display: block;
+    font-size: 70px;
+    letter-spacing: 2px;
+  }
+}
+
 .line {
   width: 100%;
   height: 10px;
   background: linear-gradient(90deg, #6dcef2 20%, #fff20000 100%);
   margin: 20px 0;
 }
-
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .section-3.speaker {
+    .speaker-wrapper {
+      .section-image {
+        margin-top: 20px;
+        &:before {
+          content:"";
+          display: none;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 600px) {
   .section-1.banner {
     .section-1-left {
@@ -321,5 +357,18 @@ img {
       width: 80px;
     }
   }
+  }
+
+  #countdown {
+    margin-bottom: 30px;
+  
+    div {
+      font-size: 14px;
+      padding: 0.5em;
+    }
+    
+    div span {
+      font-size: 40px;
+    }
   }
 }

@@ -37,7 +37,7 @@ export const Speaker = () => {
         <Col xs={12} md={12} xl={3} className="d-flex" style={{justifyContent: "flex-end"}}>
           <div className="button-wrapper">
           <a href="#reg-form" className="section-button btn outline-dark" style={{border: "1px solid #000"}}>Contact Us</a>
-          <a href="#reg-form" className="section-button btn btn-dark">Visit Site</a>
+          <a href="https://avadhesh.co/" target="_blank" className="section-button btn btn-dark">Visit Site</a>
           </div>
         </Col>
       </Row>

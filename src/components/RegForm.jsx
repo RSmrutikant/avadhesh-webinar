@@ -10,7 +10,7 @@ export const RegForm = () => {
     <section className="section-4 registration" id="registration">
       <Container>
         <Row>
-          <Col xs={12} md={12} xl={5}>
+          <Col xs={12} md={5} xl={5}>
             <div className="registration-form">
             <h1>Register</h1>
             <div className="line"></div>
@@ -23,7 +23,7 @@ export const RegForm = () => {
               />
             </div>
           </Col>
-          <Col xs={12} md={12} xl={7}>
+          <Col xs={12} md={7} xl={7}>
             <div className="reg-form-image">
               <LazyLoadImage
               src={Images.regImage}

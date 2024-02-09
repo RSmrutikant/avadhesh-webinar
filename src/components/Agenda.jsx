@@ -1,6 +1,6 @@
 import React , {useEffect, useRef} from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
+import Countdown from "./CountDown";
 
 export const Agenda = () => {
   const vidRef=useRef();
@@ -11,6 +11,7 @@ export const Agenda = () => {
       <Container>
         <Row className="agenda-details">
           <Col xs={12} md={12} xl={12} className="">
+          <div style={{display: "flex", justifyContent: "center"}}><Countdown/></div>
             <div className="section-2-content">
               Away, each of that at world; Prepared the for clothes was mainly
               those any a subdued forest need readiness to can war, options and
