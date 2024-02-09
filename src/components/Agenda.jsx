@@ -1,10 +1,9 @@
-import React , {useEffect, useRef} from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Countdown from "./CountDown";
+import VideoPlayer from "./VideoPlayer";
 
 export const Agenda = () => {
-  const vidRef=useRef();
-  useEffect(() => { vidRef.current.play(); },[]);
 
   return (
     <section className="section-2 agenda">
@@ -22,9 +21,7 @@ export const Agenda = () => {
           </Col>
           <Col xs={12} md={12} xl={8} className="mt-4">
             <div className="section-2-left">
-              <video controls autoPlay muted playsInline="playsinline" loop={true} ref={ vidRef } style={{width: "-webkit-fill-available"}}>
-                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4"></source>
-              </video>
+              <VideoPlayer/>
             </div>
           </Col>
           <Col xs={12} md={12} xl={4} className="mt-4">
