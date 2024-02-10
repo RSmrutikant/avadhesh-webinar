@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 
-const VideoPlayer = () => {
-// const vidRef=useRef();
-// useEffect(() => { vidRef.current.play(); },[]);
+const VideoPlayer = (props) => {
+
   useEffect(() => {
     const videoScroll = () => {
       if (document.querySelectorAll("video[autoplay]").length > 0) {
@@ -41,7 +40,7 @@ const VideoPlayer = () => {
   return (
     <div>
       <video controls autoPlay muted playsInline="playsinline" loop={true} style={{width: "-webkit-fill-available"}}>
-                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4"></source>
+                <source src={props.srcLink} type="video/mp4"></source>
         </video>
     </div>
   );

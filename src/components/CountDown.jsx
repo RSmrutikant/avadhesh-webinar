@@ -36,7 +36,7 @@ const Countdown = () => {
     }, 1000);
 
     return () => clearInterval(x);
-  }, []);
+  });
 
   return (
     <>

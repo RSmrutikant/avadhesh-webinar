@@ -8,9 +8,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 export const RegForm = () => {
   return (
     <section className="section-4 registration" id="registration">
-      <Container>
-        <Row>
-          <Col xs={12} md={5} xl={5}>
+      <Container style={{width: "100%", display: "flex", justifyContent: "center"}}>
+        <Row style={{width: "fit-content"}}>
+          <Col xs={12} md={5} xl={4}>
             <div className="registration-form">
             <h1>Register</h1>
             <div className="line"></div>
@@ -23,9 +23,10 @@ export const RegForm = () => {
               />
             </div>
           </Col>
-          <Col xs={12} md={7} xl={7}>
+          <Col xs={12} md={7} xl={8}>
             <div className="reg-form-image">
               <LazyLoadImage
+              className="reg-poster"
               src={Images.regImage}
               alt="banner Abstract Icon"
               effect="blur"

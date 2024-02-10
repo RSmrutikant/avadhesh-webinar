@@ -146,6 +146,17 @@ img {
       letter-spacing: 1px;
     }
   }
+  .section-1-right {
+    height: 100%;
+    span.lazy-load-image-background {
+      height: 100%;
+      .banner-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
 
 .section-2.agenda {
@@ -166,9 +177,9 @@ img {
 
     .section-image {
       &:before {
-        content:"";
-        width:30%;
-        height: 85%;
+        content: "";
+        width: 30%;
+        height: 70%;
         position: absolute;
         background-color: #ffd100;
         right: -20px;
@@ -180,49 +191,41 @@ img {
 
   .speaker-banner-long {
     background-color: #ffd100;
-    padding: 80px;
-
-    h1 {
-      font-size: 40px;
-    }
-    p {
-      font-size: 18px;
-    }
-    .button-wrapper{
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      .section-button {
-        padding: 15px 40px;
-      }
-      .section-button:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
+    padding: 40px;
   }
 }
 
-.registration-form {
-  background-color: #f3f3f3;
-  padding: 20px;
-  border-radius: 5px;
-
-  .reg-form-image {
-    img {
-      width: 350px;
-      aspect-ratio: auto 3/4;
-    }
+.section-4.registration {
+  .registration-form {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 5px;
   }
 
+  .reg-form-image {
+    width: 100%;
+    height: 100%;
+    span.lazy-load-image-background {
+      width: 100%;
+      height: 100%;
+      .reg-poster{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    
+  }
 }
 
 .section-5.footer {
-  .footer-content{
+  .footer-content {
     padding: 20px;
-  .brand-logo {
-    width: 100px;
+    text-align: right;
+    .brand-logo {
+      width: 100px;
+    }
   }
-}
 }
 
 #countdown {
@@ -230,15 +233,8 @@ img {
   display: flex;
   width: fit-content;
   margin-bottom: 30px;
-  font-family: -apple-system, 
-  BlinkMacSystemFont, 
-  "Segoe UI", 
-  Roboto, 
-  Oxygen-Sans, 
-  Ubuntu, 
-  Cantarell, 
-  "Helvetica Neue", 
-  sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
   div {
     display: inline-block;
@@ -248,7 +244,7 @@ img {
     text-transform: uppercase;
     text-align: center;
   }
-  
+
   div span {
     display: block;
     font-size: 70px;
@@ -262,19 +258,57 @@ img {
   background: linear-gradient(90deg, #6dcef2 20%, #fff20000 100%);
   margin: 20px 0;
 }
+
+// Small Resolution Desktops
+@media screen and (min-width: 1024px) and (max-width: 1350px) and (-webkit-min-device-pixel-ratio: 1) {
+  .section-1.banner {
+    .section-1-left {
+      .section-heading {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .section-2.agenda {
+    .section-heading {
+      font-size: 32px;
+    }
+  }
+
+  .section-3.speaker {
+    .speaker-banner-long {
+      padding: 15px;
+    }
+  }
+}
+
+// Apple Devices
+@media screen and (min-width: 1350px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .section-1.banner {
+    .section-1-left {
+      .section-heading {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+// Tablet Devices
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .section-3.speaker {
     .speaker-wrapper {
       .section-image {
         margin-top: 20px;
         &:before {
-          content:"";
+          content: "";
           display: none;
         }
       }
     }
   }
 }
+
+// Mobile Devices
 @media screen and (max-width: 600px) {
   .section-1.banner {
     .section-1-left {
@@ -331,42 +365,34 @@ img {
 
       .section-image {
         &:before {
-          content:"";
+          content: "";
           display: none;
         }
       }
     }
     .speaker-banner-long {
       padding: 30px 20px;
-
-      h1 {
-        font-size: 26px;
-      }
-
-      .section-button {
-        padding: 10px 20px;
-        margin-right: 10px;
-      }
     }
   }
 
   .section-5.footer {
-    .footer-content{
+    .footer-content {
       padding: 10px;
-    .brand-logo {
-      width: 80px;
+
+      .brand-logo {
+        width: 80px;
+      }
     }
-  }
   }
 
   #countdown {
     margin-bottom: 30px;
-  
+
     div {
       font-size: 14px;
       padding: 0.5em;
     }
-    
+
     div span {
       font-size: 40px;
     }

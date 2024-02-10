@@ -10,8 +10,8 @@ export const Footer = () => {
       style={{ backgroundColor: "#000", height: "300px", position: "relative" }}
     >
       <Row className="">
-        <Col xs={12} md={6} xl={10}></Col>
-        <Col xs={12} md={6} xl={2}>
+        <Col xs={12} md={6} xl={8}></Col>
+        <Col xs={12} md={6} xl={4}>
           <div className="footer-content">
             <LazyLoadImage
               className="brand-logo"

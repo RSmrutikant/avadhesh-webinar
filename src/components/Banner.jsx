@@ -14,11 +14,11 @@ export const Banner = () => {
           <div className="section-1-left">
             <div className="d-flex me-auto gap-2">
               <LazyLoadImage
-              className="brand-logo"
-              src={Images.logo}
-              alt="Brand-logo"
-              effect="blur"
-            />
+                className="brand-logo"
+                src={Images.logo}
+                alt="Brand-logo"
+                effect="blur"
+              />
               <div className="logo-addon">
                 Avadhesh India
                 <br />
@@ -62,8 +62,9 @@ export const Banner = () => {
           </div>
         </Col>
         <Col xs={12} md={12} xl={7}>
-          <div className="section-1-right">
+          <div class="section-1-right">
             <LazyLoadImage
+              className="banner-img"
               src={Images.section1Banner}
               placeholderSrc={Images.section1BannerPh}
               alt="banner Abstract Icon"
