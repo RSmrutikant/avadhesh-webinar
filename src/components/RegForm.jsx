@@ -9,9 +9,9 @@ import VideoPlayer from "./VideoPlayer";
 export const RegForm = () => {
   return (
     <section className="section-4 registration" id="registration">
-      <Container style={{width: "100%", display: "flex", justifyContent: "center"}}>
-        <Row style={{width: "fit-content",  justifyContent: "center"}}>
-          <Col xs={12} md={7} xl={4}>
+      <Container className="registration-container">
+        <Row className="reg-row">
+          <Col xs={12} md={6} xl={4}>
             <div className="reg-form-image">
             <VideoPlayer
                 srcLink={
@@ -20,7 +20,7 @@ export const RegForm = () => {
               />
             </div>
           </Col>
-          <Col xs={12} md={5} xl={4}>
+          <Col xs={12} md={6} xl={4}>
             <div className="registration-form">
             <h1>Register</h1>
             <div className="line"></div>

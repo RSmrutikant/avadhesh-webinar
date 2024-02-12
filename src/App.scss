@@ -222,6 +222,15 @@ img {
 }
 
 .section-4.registration {
+  .registration-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .reg-row {
+      width: fit-content;
+      justify-content: center;
+    }
+  }
   .registration-form {
     background-color: #f3f3f3;
     padding: 20px;
@@ -326,6 +335,14 @@ img {
       }
     }
   }
+  .section-4.registration {
+    .registration-container {
+      width: 100%;
+      .reg-row {
+        width: inherit;
+      }
+    }
+  }
 }
 
 // Mobile Devices
@@ -353,19 +370,37 @@ img {
       .agenda {
         font-size: $section-content-sm;
       }
+
+      .logo-addon {
+        font-size: 14px;
+      }
     }
   }
 
   .section-2.agenda {
     margin-block: 24px;
 
-    .agenda-details {
+    .agenda-details-1 {
+      h1 {
+        font-size: 26px;
+        font-weight: bold;
+      }
+    }
+
+    .agenda-details-2 {
       padding: 0 10px;
       margin-top: 20px;
       font-size: $section-content-sm;
 
       .section-heading {
         font-size: 26px;
+      }
+      .section-2-right {
+        .section-2-right-second {
+          h1 {
+            font-size: 26px;
+          }
+        }
       }
     }
   }
@@ -382,7 +417,10 @@ img {
       .speaker-about {
         font-size: $section-content-sm;
         padding-bottom: 20px;
+      .section-heading {
+        font-size: 26px;
       }
+    }
 
       .section-image {
         &:before {
@@ -395,6 +433,15 @@ img {
       padding: 30px 20px;
     }
   }
+
+.section-4.registration {
+  .registration-container {
+    width: 100%;
+    .reg-row {
+      width: inherit;
+    }
+  }
+}
 
   .section-5.footer {
     .footer-content {
