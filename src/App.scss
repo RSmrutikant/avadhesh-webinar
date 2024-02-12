@@ -89,7 +89,7 @@ img {
 // Component CSS ============================================
 
 .section-1.banner {
-  margin-bottom: $spacing-32;
+  // margin-bottom: $spacing-32;
   position: relative;
 
   .section-1-left {
@@ -136,7 +136,7 @@ img {
 
     .logo-addon {
       display: flex;
-      font-size: 20px;
+      font-size: 16px;
       text-transform: uppercase;
       justify-content: center;
       align-items: center;
@@ -161,7 +161,30 @@ img {
 
 .section-2.agenda {
   font-size: $section-content-md;
-  padding-block: $spacing-32;
+  
+  .agenda-details-1 {
+    pos
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+  .agenda-details-2 {
+    margin-block: 40px;
+
+    .section-heading {
+      font-size: 30px;
+    }
+
+    .section-2-right-second {
+      margin-top: 20px;
+      padding: 0;
+      h1 {
+        font-size: 28px;
+      }
+    }
+  }
 }
 
 .section-3.speaker {
@@ -172,14 +195,17 @@ img {
     position: relative;
 
     .speaker-about {
-      font-size: $section-content-md;
+      font-size: 22px;
+      .section-heading {
+        font-size: 30px;
+      }
     }
 
     .section-image {
       &:before {
         content: "";
-        width: 30%;
-        height: 70%;
+        width: 22%;
+        height: 90%;
         position: absolute;
         background-color: #ffd100;
         right: -20px;
@@ -269,12 +295,6 @@ img {
     }
   }
 
-  .section-2.agenda {
-    .section-heading {
-      font-size: 32px;
-    }
-  }
-
   .section-3.speaker {
     .speaker-banner-long {
       padding: 15px;
@@ -341,6 +361,7 @@ img {
 
     .agenda-details {
       padding: 0 10px;
+      margin-top: 20px;
       font-size: $section-content-sm;
 
       .section-heading {

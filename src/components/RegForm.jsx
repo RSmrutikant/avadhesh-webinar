@@ -2,14 +2,24 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import HubspotForm from "react-hubspot-form";
 import Images from "./imageSet";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import VideoPlayer from "./VideoPlayer";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 export const RegForm = () => {
   return (
     <section className="section-4 registration" id="registration">
       <Container style={{width: "100%", display: "flex", justifyContent: "center"}}>
-        <Row style={{width: "fit-content"}}>
+        <Row style={{width: "fit-content",  justifyContent: "center"}}>
+          <Col xs={12} md={7} xl={4}>
+            <div className="reg-form-image">
+            <VideoPlayer
+                srcLink={
+                  Images.RoleOfCoach
+                }
+              />
+            </div>
+          </Col>
           <Col xs={12} md={5} xl={4}>
             <div className="registration-form">
             <h1>Register</h1>
@@ -21,16 +31,6 @@ export const RegForm = () => {
                 onReady={(form) => console.log("Form ready!")}
                 loading={<div>Loading...</div>}
               />
-            </div>
-          </Col>
-          <Col xs={12} md={7} xl={8}>
-            <div className="reg-form-image">
-              <LazyLoadImage
-              className="reg-poster"
-              src={Images.regImage}
-              alt="banner Abstract Icon"
-              effect="blur"
-            />
             </div>
           </Col>
         </Row>

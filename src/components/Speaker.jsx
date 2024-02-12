@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 import Countdown from "./CountDown";
 import VideoPlayer from "./VideoPlayer";
+import Images from "./imageSet";
 
 export const Speaker = () => {
   return (
@@ -11,21 +12,21 @@ export const Speaker = () => {
       <Container className="speaker-container">
         
         <Row className="speaker-wrapper">
-          <Col xs={12} md={12} xl={7}>
+          <Col xs={12} md={12} xl={9}>
             <div className="speaker-about">
-            <h1 className="text-bold section-heading mb-3">Who Is Speaker ?</h1>
+            <h1 className="text-bold section-heading mb-3">Meet, Shruti Garyali</h1>
         <div className="line"></div>
-            Meet Shruti Garyali, your trusted guide on the path to personal transformation. With years of experience as a dedicated life coach, Shruti Garyali is committed to helping you unlock your true potential and live a life of purpose and fulfillment. Join her empowering webinars to gain valuable insights, practical tools, and actionable strategies for growth and success. Get ready to embark on a journey of self-discovery and empowerment with Shruti Garyali as your mentor. Start your transformational journey today!
+        A certified and internationally credentialed ICF Coach. Empowers entrepreneurs, founders, and leaders to achieve success in their life and business. Shruti collaborates with social development foundations; mentors young adults striving to rise above their challenging socio-economic backgrounds.
             </div>
           </Col>
-          <Col xs={12} md={12} xl={5}>
+          <Col xs={12} md={12} xl={3}>
             <div className="section-image">
               {/* <LazyLoadImage
               src={Images.speakerImage}
               alt="Speaker Image"
               effect="blur"
             /> */}
-            <VideoPlayer srcLink={"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"}/>
+            <VideoPlayer srcLink={Images.AboutShruti}/>
             </div>
           </Col>
         </Row>

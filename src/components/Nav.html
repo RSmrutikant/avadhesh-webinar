@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav {
+            width: 100vw;
+            height: 60px;
+            background-color: black;
+            position: fixed;
+        }
+        .section {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section-1 {
+            background-color: yellowgreen;
+        }
+        .cricle{
+            width: 150px;
+            aspect-ratio: 1/1;
+            background: red;
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        }
+        .mohan {
+
+            flex-direction: column;
+            text-align: center;
+            background-color: palevioletred;
+        }
+        .text {
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav"></div>
+    <div class="section section-1"></div>
+    <div class="section">
+        <div class="cricle"></div>
+    </div>
+    <div class="section mohan section-2">
+        <h1 class="text">MOHAN</h1>
+        <h2 class="text-2">MOHAN</h1>
+        <h3 class="text-3">MOHAN</h1>
+        <h4 class="text-4">MOHAN</h1>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+    <script>
+
+// = scroll trigger ========================================
+gsap.registerPlugin(ScrollTrigger);
+
+// onload animation ======================================
+gsap.fromTo('.nav',{y:-100,opacity:0},{y:0,opacity:1,duration:1,ease:"slow(0.7,0.7,0.7,false)"})
+
+// scroll trigger animation ===================================
+let t1= gsap.timeline({
+    scrollTrigger: {
+    trigger: ".mohan",
+    start: "top 50%",
+    end: "top 5%",
+    scrub: true,
+    markers: true,
+  }
+})
+// timeline chaining ===============
+    t1.fromTo(".text", {
+        x: -400,
+        opacity: 0,
+    }, {
+        x: 0,
+        opacity: 1,
+    }).fromTo(".text-2", {
+        x: 400,
+        opacity: 0,
+    }, {
+        x: 0,
+        opacity: 1,
+
+    }).addLabel("start")
+        .fromTo(".text-3", {
+            x: -400,
+            opacity: 0,
+        }, {
+            x: 0,
+            opacity: 1,
+        }).fromTo(".text-4", {
+            x: 400,
+            opacity: 0,
+        }, {
+            x: 0,
+            opacity: 1,
+        })
+        .fromTo(".text", {
+            scale: 1,
+            
+        }, {
+            scale: 2
+        }, "start")
+
+
+
+// javascript observer =========================================
+// Select the target element
+const targetElement = document.querySelector('.cricle');
+// Create a new Intersection Observer
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    // If the target element is intersecting
+    if (entry.isIntersecting) {
+      console.log('Target element is in view!',"cricle");
+      observer.unobserve(targetElement)
+      gsap.fromTo('.cricle',{
+            x:500,
+            opacity:0
+        },{
+            x:0,
+            opacity:1,
+            duration:2,
+            ease:"linear"
+        })
+      // Do something when the target element is in view
+    } else {
+      console.log('Target element is out of view!');
+      // Do something when the target element is out of view
+    }
+  });
+
+});
+
+// Start observing the target element
+observer.observe(targetElement);
+        
+
+
+ 
+    </script>
+</body>
+</html>
