@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/avadhesh-webinar/static/css/main.7ceb0bde.css",
-    "main.js": "/avadhesh-webinar/static/js/main.e0c004b6.js",
+    "main.css": "/avadhesh-webinar/static/css/main.3159892b.css",
+    "main.js": "/avadhesh-webinar/static/js/main.3b2a643c.js",
     "static/js/592.01b24d29.chunk.js": "/avadhesh-webinar/static/js/592.01b24d29.chunk.js",
+    "static/media/Chak-De -Role-of-Coach.webm": "/avadhesh-webinar/static/media/Chak-De -Role-of-Coach.adf3fec1fe07607b28ed.webm",
+    "static/media/Doubting-Abilities.webm": "/avadhesh-webinar/static/media/Doubting-Abilities.fb433a4728b9afe79bdf.webm",
+    "static/media/About-Shruti.webm": "/avadhesh-webinar/static/media/About-Shruti.710338422975a9b22beb.webm",
     "static/media/section-1-banner.webp": "/avadhesh-webinar/static/media/section-1-banner.c172b1db103425e27a25.webp",
     "static/media/reg-section-image.jpg": "/avadhesh-webinar/static/media/reg-section-image.911451307116229e5e46.jpg",
     "static/media/logo.webp": "/avadhesh-webinar/static/media/logo.8501c664bceb7ce9f2bd.webp",
     "static/media/section-1-banner-ph.webp": "/avadhesh-webinar/static/media/section-1-banner-ph.568fdf952c5931eda61f.webp",
     "static/media/speaker-image.webp": "/avadhesh-webinar/static/media/speaker-image.edef9a71a19ea97e1508.webp",
     "index.html": "/avadhesh-webinar/index.html",
-    "main.7ceb0bde.css.map": "/avadhesh-webinar/static/css/main.7ceb0bde.css.map",
-    "main.e0c004b6.js.map": "/avadhesh-webinar/static/js/main.e0c004b6.js.map",
+    "main.3159892b.css.map": "/avadhesh-webinar/static/css/main.3159892b.css.map",
+    "main.3b2a643c.js.map": "/avadhesh-webinar/static/js/main.3b2a643c.js.map",
     "592.01b24d29.chunk.js.map": "/avadhesh-webinar/static/js/592.01b24d29.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ceb0bde.css",
-    "static/js/main.e0c004b6.js"
+    "static/css/main.3159892b.css",
+    "static/js/main.3b2a643c.js"
   ]
 }
