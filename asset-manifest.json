@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/avadhesh-webinar/static/css/main.5e665205.css",
-    "main.js": "/avadhesh-webinar/static/js/main.8c847255.js",
+    "main.css": "/avadhesh-webinar/static/css/main.3f5aa885.css",
+    "main.js": "/avadhesh-webinar/static/js/main.8a9b5bde.js",
     "static/js/592.01b24d29.chunk.js": "/avadhesh-webinar/static/js/592.01b24d29.chunk.js",
     "static/media/Chak-De -Role-of-Coach.webm": "/avadhesh-webinar/static/media/Chak-De -Role-of-Coach.adf3fec1fe07607b28ed.webm",
-    "static/media/Doubting-Abilities.webm": "/avadhesh-webinar/static/media/Doubting-Abilities.fb433a4728b9afe79bdf.webm",
     "static/media/About-Shruti.webm": "/avadhesh-webinar/static/media/About-Shruti.710338422975a9b22beb.webm",
-    "static/media/section-1-banner.webp": "/avadhesh-webinar/static/media/section-1-banner.c172b1db103425e27a25.webp",
-    "static/media/reg-section-image.jpg": "/avadhesh-webinar/static/media/reg-section-image.911451307116229e5e46.jpg",
+    "static/media/Doubting-Abilities.webm": "/avadhesh-webinar/static/media/Doubting-Abilities.98617e07848bac811e1c.webm",
+    "static/media/section-1-banner.webp": "/avadhesh-webinar/static/media/section-1-banner.a0cf4f781a9bb6f8f022.webp",
+    "static/media/badge-1.png": "/avadhesh-webinar/static/media/badge-1.147ad35c16d8c45e3706.png",
+    "static/media/badge-2.png": "/avadhesh-webinar/static/media/badge-2.44ba215ae97175ddd5dc.png",
     "static/media/logo.webp": "/avadhesh-webinar/static/media/logo.8501c664bceb7ce9f2bd.webp",
     "static/media/section-1-banner-ph.webp": "/avadhesh-webinar/static/media/section-1-banner-ph.568fdf952c5931eda61f.webp",
     "static/media/speaker-image.webp": "/avadhesh-webinar/static/media/speaker-image.edef9a71a19ea97e1508.webp",
     "index.html": "/avadhesh-webinar/index.html",
-    "main.5e665205.css.map": "/avadhesh-webinar/static/css/main.5e665205.css.map",
-    "main.8c847255.js.map": "/avadhesh-webinar/static/js/main.8c847255.js.map",
+    "main.3f5aa885.css.map": "/avadhesh-webinar/static/css/main.3f5aa885.css.map",
+    "main.8a9b5bde.js.map": "/avadhesh-webinar/static/js/main.8a9b5bde.js.map",
     "592.01b24d29.chunk.js.map": "/avadhesh-webinar/static/js/592.01b24d29.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e665205.css",
-    "static/js/main.8c847255.js"
+    "static/css/main.3f5aa885.css",
+    "static/js/main.8a9b5bde.js"
   ]
 }
