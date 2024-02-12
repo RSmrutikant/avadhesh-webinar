@@ -11,16 +11,18 @@ export const RegForm = () => {
     <section className="section-4 registration" id="registration">
       <Container className="registration-container">
         <Row className="reg-row">
-          <Col xs={12} md={6} xl={4}>
+          <Col xs={12} md={6} xl={3}>
             <div className="reg-form-image">
+            <h2>✦ Why Even A Coach is needed?</h2>
             <VideoPlayer
                 srcLink={
                   Images.RoleOfCoach
                 }
               />
+              <i>❝ The one thing people are never good at is seeing themselves as others see them. A coach really helps.<br/><b> - Eric Shmidt</b> ❞</i>
             </div>
           </Col>
-          <Col xs={12} md={6} xl={4}>
+          <Col xs={12} md={6} xl={4} style={{display: "flex", alignItems: "center"}}>
             <div className="registration-form">
             <h1>Register</h1>
             <div className="line"></div>

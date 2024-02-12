@@ -24,9 +24,8 @@ export const Footer = () => {
                 Avadhesh India Advisory
               </p>
               <p className="mt-2" style={{ color: "#fff" }}>
-                Hear about challenges faced, solutions implemented, and the
-                impact on data accuracy and reporting in financial planning at
-                Rapid.
+              For any challenges or clarifications,<br/>
+              Call/ WhatsApp Mr Shashikant Pushpakar at <a href="tel:+917993990603" style={{color:"#fff"}}>+917993990603</a>
               </p>
             </div>
           </div>
@@ -43,9 +42,10 @@ export const Footer = () => {
             alignItems: "center",
             justifyContent: "center",
             backgroundColor: "#000",
+            width: "calc(100% - 12px)"
           }}
         >
-          @Copyright Avadhesh India Adivisory
+          © 2024 | Avadhesh India Advisory Services LLP
         </Col>
       </Row>
     </section>

@@ -22,7 +22,7 @@ export const Banner = () => {
               <div className="logo-addon">
                 Powered by
                 <br />
-                Avadhesh.co
+                avadhesh.co
               </div>
             </div>
             <h5 className="section-context">CXO HACKS</h5>
@@ -34,8 +34,9 @@ export const Banner = () => {
             </h1>
             <div className="line"></div>
             <p className="section-detail">
-            Whether you are a Startup Founder or a CXO in a startup… Your health, mindset & mental fitness have a direct impact on the company & the team. Let's learn to deal with it.<br/>Welcome to the “Founders First” - A digital meetup series by <b>Shruti Garyali</b>. 
+            Whether you are a Startup Founder or a CXO in a startup… Your health, mindset & mental fitness have a direct impact on the company & the team. Let's learn to deal with it. 
             </p>
+            <p className="section-detail">Welcome to the “Founders First” - A digital meetup series by <b>Shruti Garyali</b>.</p>
             <div className="agenda">
               <p>January 21, 2024</p>
               <p>11:00 a.m. - 12:00 noon IST | Virtual</p>

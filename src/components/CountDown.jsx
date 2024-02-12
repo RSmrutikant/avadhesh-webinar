@@ -41,14 +41,21 @@ const Countdown = () => {
   return (
     <>
       {countdown.isWebinar ? (
-        <h1>It's Webinar Time!</h1>
+        <h1>Sorry you are little late for registration, Thanks For Visiting!</h1>
       ) : (
+        <>
+        <div className="countdown-wrapper">
+        <h1>Managing Imposter Syndrome</h1>
+        <p>January 21, 2024 | 11:00 a.m. - 12:00 noon IST | Virtual</p>
+        <h2>Registration closes in...</h2>
+        </div>
         <div id="countdown">
           <div><span id="days">{countdown.days}</span>Days</div>
           <div><span id="hours">{countdown.hours}</span>Hours</div>
           <div><span id="minutes">{countdown.minutes}</span>Minutes</div>
           <div><span id="seconds">{countdown.seconds}</span>Seconds</div>
         </div>
+        </>
       )}
     </>
   );
